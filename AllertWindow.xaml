@@ -1,0 +1,19 @@
+﻿<Window x:Class="ExcelPatcher.AllertWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExcelPatcher"
+        mc:Ignorable="d"
+        Title="AllertWindow" Height="124.333" Width="238.667" ResizeMode="NoResize" WindowStyle="None" Background="#FF79199E" WindowStartupLocation="CenterScreen" Closed="Window_Closed">
+    <Grid Margin="10">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FF7E1A1A" Offset="0.233"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image x:Name="CloseAlert" HorizontalAlignment="Left" Height="32" Margin="182,4,0,0" VerticalAlignment="Top" Width="32" Source="Resources/CloseIcon.png" MouseLeftButtonDown="CloseAlert_MouseLeftButtonDown" MouseEnter="CloseAlert_MouseEnter"/>
+        <TextBlock x:Name="AllertText" HorizontalAlignment="Left" Margin="5,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="84" Width="172" Foreground="#FFF58A8A" FontSize="14" FontStyle="Italic"/>
+    </Grid>
+</Window>
